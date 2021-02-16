@@ -1,0 +1,5 @@
+<p><%= @pet.name %></p>
+<p><%= @pet.address %> </p>
+<p><%= @pet.species %> </p>
+<p>This pet was found <%= @pet.found_days_ago  %> days ago</p>
+<p> <%= link_to "This pet was found, destroy", delete_pet_path(@pet), method: :delete, data: {confirm: "Are you sure?"}  %> </p>

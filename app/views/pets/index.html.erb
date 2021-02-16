@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <h1>All the lost pets around here</h1>
+        <% @pets.each do |pet| %>
+          <div class="card">
+            <p><%= pet.name %></p>
+            <p><%= pet.address %> </p>
+            <p><%= pet.species %> </p>
+            <p>This pet was found <%= pet.found_days_ago  %> days ago</p>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>

@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   #destroy one pet
   delete 'pets/:id', to: "pets#destroy", as: :delete_pet
 
+  #update one pet
+    #display form
+  get 'pets/:id/edit', to: 'pets#edit', as: :edit_pet
+  #update db
+  patch '/pets/:id', to: 'pets#update'
+
 end
